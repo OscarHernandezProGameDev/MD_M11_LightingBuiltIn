@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: bf8933c0e617baa4f8207fea72b5ff7a, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2d2a3138e9237c440ad5f1d2953c70ec, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -479,6 +479,76 @@ Transform:
   - {fileID: 1417243037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &231266910
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1953172435}
+    m_Modifications:
+    - target: {fileID: 100002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_Name
+      value: BlobShadowProjector
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.321
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11900000, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_FarClipPlane
+      value: 7.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11900000, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+      propertyPath: m_Orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+--- !u!4 &231266911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 6da280f9a3301fc4ab7a707ae8aa1d3b, type: 3}
+  m_PrefabInstance: {fileID: 231266910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &439499521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1075,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: f42f7d9b5020ffb4cb357a3aeeba2662, type: 3}
       propertyPath: m_Name
       value: BlobLightProjector
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f42f7d9b5020ffb4cb357a3aeeba2662, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f42f7d9b5020ffb4cb357a3aeeba2662, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2136,10 +2210,11 @@ Transform:
   m_GameObject: {fileID: 1953172431}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 0.5, z: -2.75}
+  m_LocalPosition: {x: 0.8, y: 2.23, z: 0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 231266911}
   m_Father: {fileID: 224471541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
