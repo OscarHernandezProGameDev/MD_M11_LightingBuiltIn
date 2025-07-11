@@ -434,7 +434,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f71e094b814cee46b299c7051e24fdb, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -763,7 +763,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -782,8 +782,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552228790}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.062208455, y: -0.77477497, z: 0.07719288, w: 0.62441593}
-  m_LocalPosition: {x: 15.055138, y: 6.21691, z: 3.1978726}
+  m_LocalRotation: {x: -0.062069915, y: -0.89089453, z: 0.12819727, w: -0.4313}
+  m_LocalPosition: {x: -4.790461, y: 3.209553, z: 3.6302624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2172,7 +2172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &2048505646
 Light:
   m_ObjectHideFlags: 0
@@ -2283,7 +2283,7 @@ ReflectionProbe:
   m_Mode: 0
   m_RefreshMode: 0
   m_TimeSlicingMode: 0
-  m_Resolution: 512
+  m_Resolution: 2048
   m_UpdateFrequency: 0
   m_BoxSize: {x: 9.496969, y: 4.773878, z: 9.737095}
   m_BoxOffset: {x: 2.1928654, y: 1.7667286, z: -0.5398413}
@@ -2312,7 +2312,7 @@ Transform:
   m_GameObject: {fileID: 2049764794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.7211034, z: 0.53577995}
+  m_LocalPosition: {x: -2, y: 2.819, z: 0.53577995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
